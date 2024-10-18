@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lederuddannelse Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .logo {
+            float: right; /* Flytter logoet til højre */
+            margin-left: 20px; /* Tilføjer lidt luft mellem logoet og teksten */
+            width: 200px; /* Justér størrelsen på logoet */
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+        
+        .answers {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .answers li {
+            margin: 5px 0;
+        }
+        
+        .answers input[type="radio"] {
+            margin-right: 10px;
+        }
+        
+        .submit-btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        
+        .result {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="komponent-logo.jpg" alt="Komponent Logo" class="logo">
+
+    <h1>Hvilken teori bygger din ledelse på - på Den Offentlige Lederuddannelse?</h1>
+
+    <form id="leadershipTest">
+        <h2>Velkommen til din ledertest</h2>
+        <p>
+    Denne lille test er designet til at hjælpe dig med at identificere din ledelsesstil ufra 4 forskellige - og klassiske - ledelsesteorier. Du vil blive præsenteret for en case og udsagn med fire svarmuligheder (A, B, C eller D). Vælg det svar ved at trykke på cirklen udfra svaret, der bedst beskriver, hvordan du ville reagere i den pågældende situation.
+</p>
+
+<p>
+    Vi har ladet os inspirere af en artikel fra Væksthus for Ledelse. 
+    <a href="https://www.lederweb.dk/test-hvilken-teori-bygger-din-ledelse-paa/" target="_blank">
+    Læs artikel fra Væksthus for Ledelse her!
+</a>
+</p>
+
+<p>
+    Når testen er færdig, vil du få præsenteret en profil baseret på dine svar nederst på siden, som vil give dig indblik i, hvilken type leder du er. Hvis du har lige mange af flere svar (A, B, C eller D), vil du få en alsidig profil.
+</p>
+
+
+        <!-- Spørgsmålene kommer her -->
+
+        
+
+    
+
+
+
+
+
+    <form id="leadershipTest">
+        <div class="question">
+    <h3 style="font-weight:bold;">1. Hvordan ser du ledelsens rolle?</h3>
+    <p style="font-weight:bold;">Case:</p>
+    <p>Mette er afdelingsleder i kommunens teknik- og miljøforvaltning. Hun har ansvaret for at lede et team, der arbejder med byudviklingsprojekter. Mette ønsker at sikre både høj effektivitet og god trivsel blandt hendes medarbejdere. Hun overvejer forskellige ledelsesstile for at opnå dette. Hvordan mener du, Mette bør lede sit team?</p>
+    <ul class="answers">
+        <li><label><input type="radio" name="q1" value="A">A. Prioriter effektivitet og resultater. Fokuser på at opnå målene hurtigt og effektivt ved at minimere tidsspild og maksimere produktivitet.</label></li>
+        <li><label><input type="radio" name="q1" value="B">B. Vær nøje med planlægning og kontrol. Sørg for, at alle processer er klart definerede og overholdes præcist, så projekter forløber som planlagt.</label></li>
+        <li><label><input type="radio" name="q1" value="C">C. Opbyg et klart hierarki og definerede roller. Fasthold en struktur, hvor alle ved præcis, hvad deres opgaver og ansvarsområder er, for at sikre orden og overholdelse af regler.</label></li>
+        <li><label><input type="radio" name="q1" value="D">D. Værdiansæt og anerkend dine medarbejdere. Sørg for at skabe en kultur, hvor medarbejderne føler sig værdsat og anerkendt for deres indsats, og hvor deres velvære er en prioritet.</label></li>
+    </ul>
+</div>
+
+       <div class="question">
+    <h3 style="font-weight:bold;">2. Medarbejderinitiativ og ledelsesreaktion</h3>
+    <p style="font-weight:bold;">Case:</p>
+    <p>Karina, en erfaren projektleder i Kattegat Kommune, modtager en email fra en af hendes yngre medarbejdere, Peter. Peter foreslår en innovativ løsning til at forbedre den digitale tilgængelighed for kommunens services. Karina ved, at dette forslag kunne have betydelige implikationer for både medarbejderes og borgernes tilfredshed. Hun skal nu beslutte, hvordan hun bedst kan reagere på Peters forslag. Hvad er din første reaktion?</p>
+    
+    <ul class="answers">
+        <li><label><input type="radio" name="q2" value="A">A. Analyserer idéens potentiale og begynder at planlægge, hvordan vi kan implementere den mest effektivt, herunder vurdering af nødvendige ressourcer og mulige fordele.</label></li>
+        <li><label><input type="radio" name="q2" value="B">B. Overtager ledelsen af projektet, definerer opgaver og sikrer en detaljeret planlægning for at maximere chancerne for succes.</label></li>
+        <li><label><input type="radio" name="q2" value="C">C. Påpeger over for medarbejderen vigtigheden af at overholde deres primære arbejdsopgaver og kritiserer dem for at træde uden for deres definerede rolle.</label></li>
+        <li><label><input type="radio" name="q2" value="D">D. Roser medarbejderen for deres kreativitet og opmuntrer dem til at udvikle deres idé yderligere, eventuelt med input og støtte fra andre afdelinger.</label></li>
+    </ul>
+</div>
+
+
+      <div class="question">
+    <h3 style="font-weight:bold;">3. Medarbejderprofil og ledelsespræferencer</h3>
+    <p style="font-weight:bold;">Case:</p>
+    <p>I forbindelse med en kommende rekrutteringskampagne for en ny afdeling i Kattegat Kommune, skal afdelingslederen, Lars, beslutte, hvilke egenskaber han mest værdsætter hos kommende medarbejdere. Lars ønsker at sikre, at hans team ikke kun leverer effektive resultater, men også bidrager positivt til arbejdspladskulturen. Hvordan ser en ideel medarbejder ud for dig?</p>
+    
+    <ul class="answers">
+        <li><label><input type="radio" name="q3" value="A">A. En ideel medarbejder er yderst organiseret, altid klar til at håndtere nye udfordringer med ressourcer til rådighed og tilpasningsdygtig nok til hurtigt at skifte fokus efter behov.</label></li>
+        <li><label><input type="radio" name="q3" value="B">B. Den ideelle medarbejder arbejder godt i team, er altid klar til at øge sin produktivitet og søger kontinuerligt nye læringsmuligheder for at forbedre sine færdigheder.</label></li>
+        <li><label><input type="radio" name="q3" value="C">C. Denne medarbejder er ydmyg i sin tilgang til arbejde, lytter opmærksomt til feedback og viser dyb loyalitet over for både ledelsen og sine kolleger.</label></li>
+        <li><label><input type="radio" name="q3" value="D">D. En støttende kollega, der er åben for nye ideer og entusiastisk engageret i sit arbejde og i at fremme et positivt miljø på arbejdspladsen.</label></li>
+    </ul>
+</div>
+
+
+        <div class="question">
+    <h3 style="font-weight:bold;">4. Håndtering af medarbejderfravær</h3>
+    <p style="font-weight:bold;">Case:</p>
+    <p>Susanne, teamleder i kommunens socialforvaltning, modtager en opkald tidligt om morgenen fra en af hendes nøglemedarbejdere, Emma, der melder sig syg. Emma spiller en central rolle i flere løbende projekter, og Susannes reaktion er afgørende for teamets fortsatte produktivitet og Emmas velbefindende.En medarbejder ringer og melder sig syg. Hvad gør du?</p>
+    
+    <ul class="answers">
+        <li><label><input type="radio" name="q4" value="A">A. Jeg spørger om hendes helbred og forventede tilbagevenden, og diskuterer nøgleprojekter, der kan kræve øjeblikkelig opmærksomhed, for at sikre en glidende overgang i hendes fravær.</label></li>
+        <li><label><input type="radio" name="q4" value="B">B. Jeg ønsker hende god bedring, sender hende den arbejde, der skal indhentes, og koordinerer med teamet for at omfordele hendes igangværende opgaver.</label></li>
+        <li><label><input type="radio" name="q4" value="C">C. Jeg tjekker hendes fraværshistorik for at vurdere om der er et mønster, og overvejer de næste skridt i overensstemmelse med virksomhedens politikker.</label></li>
+        <li><label><input type="radio" name="q4" value="D">D. Jeg forsikrer hende om, at hendes helbred er prioritet, og opfordrer hende til at tage den tid, hun behøver til at blive helt rask uden at bekymre sig om arbejdsopgaver.</label></li>
+    </ul>
+</div>
+
+
+<div class="question">
+    <h3 style="font-weight:bold;">5. Anerkendelse og værdi i teamledelse</h3>
+    <p style="font-weight:bold;">Case:</p>
+    <p>Erik, chef for den tekniske afdeling i Kattegat Kommune, er opmærksom på betydningen af et motiveret team. Han overvejer forskellige metoder til at vise sin påskønnelse for teamets hårde arbejde og engagement, især efter de har afsluttet et stort projekt med succes. Hvordan viser du dit team, at du værdsætter dem</p>
+    
+    <ul class="answers">
+        <li><label><input type="radio" name="q5" value="A">A. Ved at give dem bonusser eller anden belønning for at være ekstra produktive, hvilket understreger værdien af deres hårde arbejde og resultater.</label></li>
+        <li><label><input type="radio" name="q5" value="B">B. Ved at organisere sociale arrangementer som en god frokost eller teambuilding-aktiviteter, som styrker relationer og viser min anerkendelse på en mere personlig måde.</label></li>
+        <li><label><input type="radio" name="q5" value="C">C. Ved at skabe jobstabilitet og sikkerhed, hvilket viser at jeg værdsætter deres fortsatte tilstedeværelse og indsats i teamet.</label></li>
+        <li><label><input type="radio" name="q5" value="D">D. Ved konsekvent at anerkende både store og små bidrag, hvilket viser at jeg ser og værdsætter deres daglige indsats og ikke kun de store milepæle.</label></li>
+    </ul>
+</div>
+
+
+<div class="question">
+    <h3 style="font-weight:bold;">6. Kommunikation under jobsamtaler</h3>
+    <p style="font-weight:bold;">Case:</p>
+    <p>Linda, HR-chef i Kommune A, forbereder sig på at interviewe flere kandidater til en ny åbnet stilling i planlægningsafdelingen. Hun ønsker at give et klart og præcist billede af, hvad jobbet indebærer og hvad organisationen forventer af den nye medarbejder. Hvad siger du til hende?</p>
+       <ul class="answers">
+        <li><label><input type="radio" name="q6" value="A">A. Jeg forklarer, at hun vil gennemgå et grundigt oplæringsforløb for at sikre, at hun opnår den samme effektivitetsniveau som hendes fremtidige kolleger.</label></li>
+        <li><label><input type="radio" name="q6" value="B">B. Jeg understreger, at jobbet kræver fleksibilitet og evnen til at arbejde under stramme deadlines, og at hurtig tilpasning til ændringer er afgørende.</label></li>
+        <li><label><input type="radio" name="q6" value="C">C. Jeg er ærlig og siger, at hun ikke helt opfylder alle de nødvendige kvalifikationer, men at der kan være andre muligheder eller veje for udvikling.</label></li>
+        <li><label><input type="radio" name="q6" value="D">D. Jeg udtrykker min entusiasme for hendes baggrund og færdigheder og siger, at jeg tror, hun ville være en fremragende tilføjelse til vores team.</label></li>
+    </ul>
+</div>
+
+
+<div class="question">
+    <h3 style="font-weight:bold;">7. Håndtering af projektforsinkelser</h3>
+    <p style="font-weight:bold;">Case:</p>
+    <p>Maja, projektleder i Kommune B’s IT-afdeling, står overfor en situation, hvor en dygtig, men ofte forsinket medarbejder, Jonas, har overskredet fristen for et vigtigt leveranceprojekt. Dette projekt er kritisk for kommunens nye digitale borgerengagement platform. Maja må beslutte, hvordan hun bedst håndterer situationen for både at opretholde teamets moral og sikre projektets fremskridt.Hvad gør du?</p>
+        <ul class="answers">
+        <li><label><input type="radio" name="q7" value="A">A. Jeg irettesætter medarbejderen og arbejder sammen med hende for at finde den mest effektive måde at afslutte projektet hurtigt på.</label></li>
+        <li><label><input type="radio" name="q7" value="B">B. Jeg planlægger et møde for at diskutere årsagerne til forsinkelsen og udvikle en strategi, så arbejdet kan blive færdigt så hurtigt som muligt.</label></li>
+        <li><label><input type="radio" name="q7" value="C">C. Jeg giver en formel advarsel og noterer hændelsen i hendes personalefil for at monitorere eventuelle mønstre af gentagen forsinkelse.</label></li>
+        <li><label><input type="radio" name="q7" value="D">D. Jeg forsikrer hende om, at mens deadlines er vigtige, er kvaliteten af arbejdet og hendes indsats også meget værdsat.</label></li>
+    </ul>
+</div>
+
+
+<div class="question">
+    <h3 style="font-weight:bold;">8. Beslutningsprocesser i lederskab</h3>
+    <p style="font-weight:bold;">Case:</p>
+    <p>Annette, leder af Børne- og Ungdomsforvaltningen i Kommune C, står over for vigtige beslutninger om implementering af nye uddannelsesprogrammer. Disse beslutninger vil påvirke mange børn og ansatte. Hendes tilgang til beslutningstagning vil spille en nøglerolle i, hvor effektivt og glat disse ændringer implementeres. Hvad er din tilgang til at tage beslutninger i lederrollen?</p>
+       <ul class="answers">
+        <li><label><input type="radio" name="q8" value="A">A. Jeg træffer hurtige beslutninger og prioriterer altid effektivitet for at sikre, at vi kan reagere hurtigt på skiftende omstændigheder.</label></li>
+        <li><label><input type="radio" name="q8" value="B">B. Jeg inddrager mit team i beslutningsprocessen for at få deres perspektiver, men jeg beholder det endelige ansvar og træffer den sidste beslutning.</label></li>
+        <li><label><input type="radio" name="q8" value="C">C. Jeg holder mig strengt til organisationens politikker og hierarkiske struktur, og følger de etablerede retningslinjer nøje ved alle beslutninger.</label></li>
+        <li><label><input type="radio" name="q8" value="D">D. Jeg fremmer en kultur af kollektiv beslutningstagning, hvor alle i teamet opfordres til at bidrage og deres input vægtes højt i den endelige beslutning.</label></li>
+    </ul>
+</div>
+
+
+<div class="question">
+    <h3 style="font-weight:bold;">9. Konflikthåndtering i Teamet</h3>
+    <p style="font-weight:bold;">Case:</p>
+    <p>Birgitte, leder af Borgerservice i Kattegat Kommune, står overfor en opstået konflikt mellem to nøglemedarbejdere, som truer med at påvirke hele teamets samarbejde og effektivitet. Birgitte skal træffe en hurtig beslutning om, hvordan hun bedst kan håndtere situationen, samtidig med at hun opretholder en positiv arbejdskultur. Hvordan reagerer du, når der er konflikter i teamet?</p>
+        <ul class="answers">
+        <li><label><input type="radio" name="q9" value="A">A. Jeg træder hurtigt til, tager kontrol over situationen og implementerer en løsning for at genoprette ro og orden så effektivt som muligt.</label></li>
+        <li><label><input type="radio" name="q9" value="B">B. Jeg arrangerer en mediations session, hvor jeg faciliterer dialog mellem parterne og hjælper dem med at finde en fælles løsning, som alle kan acceptere.</label></li>
+        <li><label><input type="radio" name="q9" value="C">C. Jeg henviser til virksomhedens regelsæt for konflikthåndtering, anvender de nødvendige disciplinære skridt, og sikrer at alle procedurer følges korrekt.</label></li>
+        <li><label><input type="radio" name="q9" value="D">D. Jeg viser empati ved at lytte til alle involverede parter, forsøger at forstå deres synspunkter, og arbejder hen imod en løsning, der tager hensyn til alle parternes følelser og behov.</label></li>
+    </ul>
+</div>
+
+
+<div class="question">
+    <h3 style="font-weight:bold;">10. Lederskab og organisatoriske mål</h3>
+    <p style="font-weight:bold;">Case:</p>
+    <p>Thomas, direktør for Teknisk Forvaltning i Kattegat Kommune, reflekterer over sine ledelsesmæssige prioriteringer for det kommende år. Han står over for udfordringer som stramme budgetter, høje forventninger fra borgere og behovet for at øge medarbejdernes engagement. Han ønsker at definere klare mål, der ikke kun styrker forvaltningens effektivitet men også sikrer en positiv arbejdskultur. Hvad ser du som det vigtigste mål for dig som leder?</p>
+    
+    <ul class="answers">
+        <li><label><input type="radio" name="q10" value="A">A. At maksimere produktiviteten og effektiviteten i organisationen ved at optimere processer og ressourceforbrug.</label></li>
+        <li><label><input type="radio" name="q10" value="B">B. At fremme et stærkt samarbejde i teamet, hvor alle medlemmer arbejder sammen mod fælles definerede mål.</label></li>
+        <li><label><input type="radio" name="q10" value="C">C. At sikre, at alle organisatoriske regler og etableret hierarki overholdes nøje for at opretholde struktur og disciplin.</label></li>
+        <li><label><input type="radio" name="q10" value="D">D. At udvikle og opretholde en motiverende og positiv arbejdskultur, der opmuntrer til medarbejderes trivsel og udvikling.</label></li>
+    </ul>
+</div>
+
+
+
+        <button type="button" class="submit-btn" onclick="submitTest()">Tjek mine svar - scrol længere ned for din profil </button>
+    </form>
+
+    <div id="result" class="result" style="display: none;"></div>
+
+    <script>
+        function submitTest() {
+            const form = document.getElementById('leadershipTest');
+            const data = new FormData(form);
+
+            let aCount = 0, bCount = 0, cCount = 0, dCount = 0;
+
+            // Tæl antallet af A, B, C, og D
+            for (let entry of data.entries()) {
+                switch(entry[1]) {
+                    case 'A': aCount++; break;
+                    case 'B': bCount++; break;
+                    case 'C': cCount++; break;
+                    case 'D': dCount++; break;
+                }
+            }
+
+            // Find ud af, hvilken profil der skal vises
+            let resultText = '';
+            if (aCount > bCount && aCount > cCount && aCount > dCount) {
+                resultText = `
+                <b>Flest A'er:</b>
+
+
+
+                
+</div>
+<br><br><br>
+
+Din ledelsesstil er mest som Frederick Taylors. Du mener, at arbejdsprocessen skal opdeles i små del-opgaver for at finde den mest effektive metode til at fuldføre arbejdsopgaverne. Du coacher dine medarbejdere i overensstemmelse hermed og mener, at de bør belønnes, når de er ekstra produktive eller opnår særligt gode resultater.
+</div>
+</div>
+<br><br><br>
+Du ser ledelse lidt som en videnskab, hvor arbejdsprocesser kan optimeres gennem systematisk analyse og opdeling af opgaver i mindre, specialiserede trin. For dig er det vigtigt at finde den mest effektive måde at udføre hver enkelt opgave på, og du tror på, at medarbejdernes produktivitet kan forbedres ved at eliminere unødvendige bevægelser og ineffektive arbejdsgange.
+<br><br><br>
+Du arbejder tæt sammen med dine medarbejdere for at identificere de bedste metoder til at udføre deres arbejde. Gennem træning og coaching sørger du for, at de følger disse optimerede processer og standarder. Belønning spiller også en central rolle i din ledelsesfilosofi; du mener, at når medarbejderne leverer ekstraordinære resultater eller overgår produktivitetsmål, bør de modtage konkrete incitamenter, såsom økonomiske bonusser eller anerkendelse, for at motivere dem til at fortsætte deres høje præstationer.
+<br><br><br>
+Frederick W. Taylor, som var en pioner inden for effektivisering, udviklede sit koncept om Scientific management gennem sine erfaringer som ingeniør i den amerikanske stålindustri. Han opdagede, at mange arbejdsprocesser kunne forbedres betydeligt ved at analysere dem i detaljer og eliminere spild. Dette førte til Taylorismen, en ledelsesteori, der fokuserede på effektivitet og systematik som fundamentale drivkræfter for succes.
+<br><br><br>
+Taylorismen fik især stor betydning i industrien, hvor tidsstudier og standardisering af arbejdsprocesser blev grundlaget for øget produktivitet. Akkordbetaling – hvor medarbejdere blev betalt efter deres output – blev en populær metode til at belønne effektivitet. Dette skabte et arbejdsmarked, hvor konkurrence og præstationsbaserede belønninger spillede en større rolle, og hvor arbejderne blev opfordret til at arbejde hurtigere og mere præcist for at øge deres indtjening.
+<br><br><br>
+Selvom Taylorismens principper var banebrydende og gav anledning til store produktivitetsgevinster, er det vigtigt at huske, at denne tilgang til ledelse lægger vægt på struktur og kontrol, hvilket i nogle tilfælde kan medføre en følelse af fremmedgørelse hos medarbejderne, der ser deres arbejdsdag reduceret til en række gentagne og mekaniske opgaver. Dette er en udfordring, som moderne ledere ofte skal balancere, når de trækker på Taylors ideer om effektivitet i nutidens arbejdsmarked.
+<br><br><br>
+Så din ledelsesstil, inspireret af Taylor, er først og fremmest præget af en systematisk og resultatfokuseret tilgang, hvor du ser optimering som nøglen til succes. Men du bør også overveje, hvordan du kan bevare medarbejdernes motivation og engagement på lang sigt ved at finde en balance mellem effektivitet og arbejdsglæde.
+<br><br><br>
+<b>Spørgsmål til overvejelse i forhold til din ledelse:</b>
+<br><br>
+Hvordan sikrer du, at dine medarbejdere forbliver motiverede og engagerede, selvom arbejdsprocesserne er strømlinede og systematiserede?
+<br><br>
+Hvordan håndterer du situationer, hvor en optimeret arbejdsproces ikke nødvendigvis tager højde for den enkelte medarbejders behov eller arbejdsstil?
+<br><br>
+Hvordan kan du skabe et arbejdsmiljø, hvor medarbejderne føler sig værdsatte som mere end blot producenter af resultater?
+<br><br><br>
+</div>
+</div>
+<b>Få mere at vide om Taylors ledelsesteori ved at klikke her:</b> 
+</div>
+<br>
+<a href="https://www.business.com/articles/management-theory-of-frederick-taylor/?_ga=2.104915591.58606424.1528712907-2051375144.1528370328 target="_blank">Læs mere om Frederick W. Taylor
+
+<br>
+</a></a>
+                `;
+            } else if (bCount > aCount && bCount > cCount && bCount > dCount) {
+                resultText = `
+                <b>Flest B'er:</b>
+                </div>
+<br><br><br>
+
+Din ledelsesstil er mest som Henri Fayol. Du ser ledelse som en disciplin, hvor kontrollen og planlægningen af alle processer er afgørende for organisationens succes. Du mener, at en leder bør være dybt involveret i at sikre, at medarbejderne har de nødvendige ressourcer og klare instruktioner for at udføre deres opgaver optimalt. For dig handler det om at skabe en velorganiseret og struktureret arbejdsplads, hvor alle kender deres rolle, og hvor der er klare retningslinjer for, hvordan tingene skal gøres.
+</div>
+</div>
+<br><br><br>
+Selvom du opfordrer til teamwork og samarbejde, mener du, at disse aktiviteter skal ske under ledelsens vejledning og kontrol. Du ser det som lederens ansvar at sikre, at samarbejdet mellem medarbejderne er effektivt og målrettet. Du tror på, at en stærk ledelse skaber et miljø, hvor medarbejderne arbejder i harmoni mod fælles mål, og at klare hierarkiske strukturer er nødvendige for at opretholde orden og effektivitet.
+
+<br><br><br>
+Henri Fayol, som var en fransk industrileder og ingeniør, formulerede en af de første omfattende teorier om ledelse, der satte fokus på organisationsstrukturen og de processer, der sikrer virksomhedens funktion. Han udviklede 14 principper for ledelse, som har haft stor indflydelse på moderne ledelsesteori. Disse principper omfatter bl.a. opdeling af arbejdet, autoritet og ansvar, disciplin, enhed af kommando og enhed af retning, samt retfærdighed, stabilitet i ansættelsen og initiativ.
+<br><br><br>
+Fayol så ledelse som en funktion, der kunne opdeles i fem nøgleområder: planlægning, organisering, ledelse, koordinering og kontrol. Han argumenterede for, at ledere skulle have en klar plan for fremtiden og sørge for, at deres teams var godt organiserede for at opnå de ønskede resultater. Desuden understregede han vigtigheden af, at ledelsen skulle tage beslutninger og lede medarbejderne, så alle arbejdede i samme retning, og at kontrollere, om de opnåede resultater var i overensstemmelse med planerne.
+<br><br><br>
+En af de centrale idéer i Fayols ledelsesteori er, at ledelsen bør interagere med personalet på disse fem måder for at kontrollere og planlægge produktionen effektivt. Lederen skal sikre, at der er en tydelig struktur i organisationen, at ansvarsområderne er klart definerede, og at der er tilstrækkelig disciplin og orden i arbejdsgangene. For Fayol var det ligeledes vigtigt, at ledelsen ikke kun havde autoritet, men også påtog sig ansvaret for at lede organisationen mod succes.
+<br><br><br>
+Som Fayol-leder er din tilgang derfor karakteriseret ved en stærk tro på systematik og struktur. Du ser det som din rolle at være den, der styrer og kontrollerer processen fra start til slut. Samtidig anerkender du vigtigheden af at opbygge teamwork, men altid inden for rammerne af en klar og veldefineret ledelsesstruktur. Dette sikrer, at alle bevæger sig i samme retning, og at organisationen som helhed fungerer optimalt.
+<br><br><br>
+Når du leder dine medarbejdere, sørger du for, at alle ressourcer er tilgængelige, og at der ikke er nogen uklarheder i, hvad der forventes af dem. Du arbejder ud fra en forståelse af, at planlægning og kontrol er nøglen til succes, og at en stærk ledelse er grundlaget for en effektiv og produktiv organisation.
+<br><br><br>
+<b>Spørgsmål til overvejelse i forhold til din ledelse:</b>
+<br><br>
+Hvordan håndterer du situationer, hvor de faste strukturer og processer ikke er tilstrækkelige til at løse uforudsete problemer eller ændringer i arbejdsforholdene?
+<br><br>
+Hvordan håndterer du situationer, hvor de faste strukturer og processer ikke er tilstrækkelige til at løse uforudsete problemer eller ændringer i arbejdsforholdene?
+<br><br>
+Hvordan skaber du et miljø, hvor medarbejderne føler sig hørt og involveret i beslutningsprocessen, samtidig med at du opretholder den nødvendige kontrol over arbejdsprocesserne?
+<br><br><br>
+</div>
+</div>
+<b>Få mere at vide om Fayols ledelsesteori ved at klikke her:</b> 
+</div>
+<br>
+<a href=" https://www.business.com/articles/management-theory-of-henri-fayol/?_ga=2.105236999.58606424.1528712907-2051375144.1528370328 target="_blank">Læs mere om Henri Fayol
+
+<br>
+
+                `;
+            } else if (cCount > aCount && cCount > bCount && cCount > dCount) {
+                resultText = `
+                <b>Flest C'er:</b>
+                </div>
+<br><br><br>
+Din ledelsesstil er mest som Max Weber. Ligesom Max Weber er du ikke typen, der har tid til nonsens. Din ledelsesstil er præget af en stram struktur, hvor roller og ansvar er nøje defineret. Du tror fuldt og fast på, at medarbejderne er tildelt deres roller på baggrund af deres kvalifikationer og kompetencer, og at de derfor bør holde sig inden for deres fastlagte ansvarsområder. At krydse grænser mellem roller kan føre til ineffektivitet og kaos, og som leder ser du det som din pligt at sikre, at dette ikke sker. Du overvåger dine medarbejdere nøje for at sikre, at de følger de etablerede regler og processer, som er skabt for at fremme orden og effektivitet i organisationen.
+</div>
+</div>
+<br><br><br>
+For dig er det vigtigt, at kun de mest kvalificerede medarbejdere bliver ansat, og at alle i organisationen har en klar forståelse af deres position og ansvar. At ansætte de rigtige mennesker er en grundlæggende del af at opretholde en velfungerende organisation. Du tror på, at når medarbejderne kender deres pligter og holder sig til dem, vil organisationen fungere optimalt, og resultaterne vil blive bedre.
+<br><br><br>
+Max Weber, som var en indflydelsesrig tysk økonom og sociolog, er bedst kendt for sin teori om bureaukrati, også kaldet bureaukratisk teori. Ifølge Weber er en bureaukratisk ledelsesstil den mest effektive måde at styre store organisationer på. Bureaukrati handler om at indføre faste regler og standardprocedurer, som alle medarbejdere skal følge. Magten i organisationen skal fordeles strengt efter hierarkiske principper, hvor hver person har et klart defineret ansvarsområde og handler i overensstemmelse med fastlagte regler.
+<br><br><br>
+Webers model for bureaukrati er bygget på en række centrale principper, herunder en klar opdeling af arbejdsopgaver, en hierarkisk struktur, og et sæt regler, der regulerer beslutningstagning og adfærd i organisationen. Dette sikrer, at organisationen fungerer som en velolieret maskine, hvor hver del arbejder i overensstemmelse med de øvrige, og hvor personlige relationer eller subjektive beslutninger ikke forstyrrer den generelle orden.
+<br><br><br>
+Som leder, der er inspireret af Webers tankegang, lægger du vægt på, at der skal være klare regler for, hvordan arbejdet udføres, og at disse regler skal følges strengt. Dette betyder også, at du holder fast i princippet om meritokrati – kun de mest kvalificerede skal ansættes og forfremmes. Din tilgang sikrer, at alle medarbejdere er veluddannede og kvalificerede til deres roller, og at der ikke er plads til personlige præferencer eller favoriseringer.
+<br><br><br>
+Selvom Webers bureaukratiske model har været genstand for både forskning og kritik, har den haft en enorm indflydelse på moderne ledelsesteori. Nogle kritikere peger på, at bureaukratiet kan føre til stivhed og manglende fleksibilitet, men for dig er de faste rammer og regler nødvendige for at skabe orden og undgå forvirring. Ved at opretholde en klar struktur, hvor alle kender deres plads, sikrer du, at organisationen fungerer effektivt, og at resultaterne lever op til forventningerne.
+<br><br><br>
+Din tilgang som leder afspejler derfor en dyb tro på, at kontrol, struktur og klare grænser er nøglen til succes. Du forventer, at dine medarbejdere arbejder inden for de rammer, der er sat, og du sørger for, at de nødvendige regler er på plads for at guide dem i deres arbejde. På den måde sikrer du, at organisationen fungerer som en velsmurt maskine, hvor hver enkelt del arbejder præcist og effektivt for at opnå de overordnede mål.
+<br><br><br>
+<b>Spørgsmål til overvejelse i forhold til din ledelse:</b>
+<br><br>
+Hvordan sikrer du, at din ledelsesstil, med strenge regler og klare roller, ikke begrænser medarbejdernes kreativitet og evne til at tænke selvstændigt?
+<br><br>
+Hvordan håndterer du situationer, hvor en medarbejder har brug for at krydse grænser mellem roller for at løse et problem, der kræver en mere fleksibel tilgang?
+<br><br>
+Hvordan sørger du for, at dine medarbejdere føler sig værdsatte som individer, når fokus primært ligger på deres roller og overholdelse af regler?
+<br><br><br>
+</div>
+</div>
+<b>Få mere at vide om Webers tilgang til ved at klikke her:</b> 
+</div>
+<br>
+<a href="https://www.business.com/articles/management-theory-of-max-weber/ target="_blank">Læs mere om Max Weber
+
+<br>
+
+                `;
+            } else if (dCount > aCount && dCount > bCount && dCount > cCount) {
+                resultText = `
+                <b>Flest D'er:</b>
+                </div>
+<br><br><br>
+Din ledelsesstil er mest som Elton Mayo. Du tror på, at det, der virkelig motiverer medarbejderne, er den menneskelige opmærksomhed og anerkendelse, du giver dem. Økonomiske incitamenter som bonusser har deres plads, men du mener, at de kun giver kortvarig tilfredsstillelse. For dig handler ægte motivation om, at medarbejderne føler sig værdsatte som individer og ikke blot som maskiner i en produktionsproces. Du gør en indsats for at se og anerkende selv de små ting, som dine medarbejdere gør, fordi du ved, at denne personlige opmærksomhed bygger en stærkere forbindelse mellem dem og deres arbejde.
+</div>
+</div>
+<br><br><br>
+Du forstår, at medarbejderne har forskellige kompetencer og styrker, og du ser dette som en ressource, der kan løfte hele organisationen. I stedet for at forsøge at ensrette medarbejderne til at passe ind i én bestemt ramme, tilskynder du til samarbejde, hvor hver enkelt medarbejder får lov til at skinne inden for deres særlige områder. Du sætter teams sammen på en måde, der fremmer samarbejde, og hvor de forskellige kompetencer komplementerer hinanden. Når medarbejderne arbejder i fællesskab, skaber det ikke kun bedre resultater for organisationen, men også en følelse af kammeratskab og fælles succes.
+<br><br><br>
+Elton Mayo, som var psykolog, er kendt for sine banebrydende studier inden for Human Relations-bevægelsen. Han udforskede, hvordan arbejdsforhold og sociale relationer påvirkede medarbejdernes produktivitet og trivsel. Hans forskning, især de berømte Hawthorne-studier, afslørede, at medarbejderne blev mere motiverede og produktive, når de følte, at de fik opmærksomhed fra ledelsen, og når der var et godt socialt miljø på arbejdspladsen. Mayo fandt, at faktorer som gode relationer, kammeratskab, anerkendelse og medbestemmelse havde en langt større indflydelse på motivationen end økonomiske incitamenter alene.
+<br><br><br>
+I din ledelsesstil er det tydeligt, at du har taget disse principper til dig. Du skaber en arbejdsplads, hvor relationer er i centrum, og hvor medarbejderne føler sig set, hørt og værdsat. Du anerkender ikke kun store præstationer, men også de små daglige handlinger, der bidrager til den overordnede succes. Ved at fremme et åbent og demokratisk miljø, hvor medarbejderne har mulighed for at få indflydelse og komme med input, styrker du deres engagement og loyalitet over for organisationen.
+<br><br><br>
+Denne tilgang til ledelse bygger også på din overbevisning om, at motivation og trivsel hænger sammen. Når medarbejderne trives, føler sig anerkendt og har positive relationer til deres kolleger, bliver de mere engagerede i deres arbejde. Du ser værdien i at fremme et arbejdsmiljø, hvor medarbejderne ikke blot føler, at de er der for at udføre en opgave, men hvor de også har et personligt bånd til deres kolleger og organisationen som helhed.
+<br><br><br>
+Som leder i Elton Mayos ånd prioriterer du derfor medarbejdernes relationer og trivsel højt. Du tror på, at når medarbejderne føler sig værdsatte og har et stærkt socialt netværk på arbejdspladsen, vil de være mere tilbøjelige til at yde deres bedste. Dette gør ikke kun arbejdspladsen til et bedre sted at være, men bidrager også til virksomhedens succes på længere sigt.
+<br><br><br>
+<b>Spørgsmål til overvejelse i forhold til din ledelse:</b>
+<br><br>
+Hvordan sikrer du, at din tilgang til anerkendelse og relationer også fører til høj produktivitet, og ikke kun trivsel blandt medarbejderne?
+<br><br>
+Hvordan håndterer du situationer, hvor et team eller en medarbejder ikke trives socialt, selvom du har forsøgt at skabe et støttende og anerkendende miljø?
+<br><br>
+Hvordan balancerer du medarbejdernes behov for medbestemmelse og anerkendelse med kravene om at levere resultater inden for stramme deadlines og rammer?
+<br><br><br>
+</div>
+</div>
+<b>Få mere at vide om Elton Mayos tilgang til ved at klikke her:</b> 
+</div>
+<br>
+<a href="https://www.business.com/articles/management-theory-of-elton-mayo/ target="_blank">Læs mere om Elton Mayo
+<br>
+
+                `;
+            } else {
+                resultText = `
+                <b>Lige mange af hver:</b>
+                </div>
+<br><br><br>
+Du er en alsidig eller eklektisk leder. Din styrke ligger i din evne til at trække på forskellige ledelsesstile og tilpasse dig de behov og udfordringer, der opstår i forskellige situationer. Du mener ikke, at der findes én "rigtig" måde at lede på, men snarere at en effektiv leder bør være fleksibel og kunne bruge de værktøjer, der passer bedst til den aktuelle kontekst. Du er lige komfortabel med at være demokratisk, når det kræves, og autoritær, når det er nødvendigt, og du er dygtig til at balancere mellem de forskellige metoder, alt efter hvad der vil skabe de bedste resultater for organisationen.
+</div>
+</div>
+<br><br><br>
+Som en alsidig leder har du en holistisk tilgang til ledelse. Du ser det som din opgave at forstå de unikke dynamikker i dit team og tilpasse din ledelsesstil derefter. Nogle situationer kræver stram styring og klare retningslinjer, mens andre kalder på mere samarbejde og medbestemmelse. Du ved, at forskellige medarbejdere og teams har forskellige behov, og du er dygtig til at skifte gear og anvende forskellige ledelsesstile i takt med, at behovene ændrer sig.
+<br><br><br>
+Du er inspireret af teorier som dem, der stammer fra både traditionelle og moderne ledelsestænkere. Fra Max Weber har du taget struktur og disciplin, når det er nødvendigt, men fra Elton Mayo har du også lært værdien af relationer og trivsel. Samtidig anvender du elementer af Henry Mintzbergs syn på lederens mange roller og erkender, at en leder ofte må være en generalist, der navigerer komplekse situationer med mange forskellige ansvar og forventninger.
+<br><br><br>
+I stedet for at låse dig fast i én bestemt ledelsesfilosofi, sammensætter du en unik blanding af forskellige teorier og stilarter. Dette gør dig i stand til at håndtere en bred vifte af situationer, fra strategisk planlægning til konfliktløsning, fra motivering af medarbejdere til effektiv ressourceforvaltning. Du er ikke bange for at tage beslutninger og justere din tilgang baseret på den feedback, du modtager fra dit team og de resultater, der opnås.
+<br><br><br>
+For dig er ledelse en dynamisk og konstant udviklende proces. Du holder dig ajour med de nyeste ledelsestrends og tilpasser dig løbende til nye udfordringer. Din fleksibilitet gør dig i stand til at lede teams gennem forandringer og usikre tider, fordi du har evnen til at skifte mellem forskellige ledelsesstile og vælge den, der passer bedst til situationen..
+<br><br><br>
+Denne alsidighed giver dig en særlig styrke som leder. Du kan motivere og inspirere medarbejdere med forskellige personligheder og kompetencer, samtidig med at du holder fokus på organisationens mål og effektivitet. Din eklektiske tilgang gør dig i stand til at træffe hurtige, velovervejede beslutninger og sikre, at dit team præsterer optimalt under en række forskellige forhold.
+<br><br><br>
+Kort sagt, som alsidig leder er du i stand til at tilpasse dig enhver situation og trække på de nødvendige værktøjer for at sikre succes. Din styrke ligger i din fleksibilitet og din evne til at kombinere forskellige ledelsesstile, hvilket gør dig til en effektiv og dynamisk leder, der kan navigere komplekse organisatoriske landskaber.
+<br><br><br>
+<b>Spørgsmål til overvejelse i forhold til din ledelse:</b>
+<br><br>
+Hvordan sikrer du, at din fleksible og alsidige tilgang til ledelse stadig skaber konsistens og klarhed for dine medarbejdere, så de ved, hvad der forventes af dem i forskellige situationer?
+<br><br>
+Hvordan vurderer du, hvornår det er tid til at skifte ledelsesstil, og hvordan sikrer du, at dine medarbejdere føler sig komfortable med de skiftende tilgange?
+<br><br>
+Hvordan håndterer du situationer, hvor dine medarbejdere foretrækker en mere konsistent ledelsesstil, mens du ser behovet for at bruge en bred vifte af tilgange?
+<br><br><br>
+</div>
+</div>
+<b>Få mere at vide om eklekticisme ved at klikke her:</b> 
+</div>
+<br>
+<a href="https://da.wikipedia.org/wiki/Eklekticisme target="_blank">Læs mere om Eklekticisme
+
+<br>
+
+                `;
+            }
+
+            // Vis resultatet
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = resultText;
+            resultDiv.style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
